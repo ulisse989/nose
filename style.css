@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    background-color: rgb(234, 238, 230);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 15px 40px;
+}
+
+/* MENU IZQUIERDA */
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover{
+    color: #00ff88;
+}
+
+/* LADO DERECHO */
+.right-section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* BUSCADOR */
+.search-box input{
+    padding: 6px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+/* LOGO */
+.logo{
+    color: #00ff88;
+    font-size: 22px;
+    font-weight: bold;
+}
+/********************/
+.hero{
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("https://images.unsplash.com/photo-1518091043644-c1d4457512c6");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+/*************/
+.hero-content{
+    position: relative;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h1{
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+/* BOTONES */
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn{
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 25px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Bordes suaves de 3px */
+.btn-jugadores{
+    border: 3px solid #8ef5b1;
+}
+
+.btn-estadisticas{
+    border: 3px solid #a0d8ff;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+/*************************************/
+/* ================= FOOTER PREMIUM ================= */
+
+.footer{
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+    padding: 70px 60px 30px 60px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* COLUMNAS */
+.footer-col{
+    flex: 1;
+    min-width: 240px;
+}
+
+.footer-col h3{
+    margin-bottom: 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+/* Línea decorativa debajo del título */
+.footer-col h3::after{
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #8ef5b1;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+
+/* Texto */
+.footer-col p{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #dcdcdc;
+    transition: 0.3s;
+}
+
+.footer-col p:hover{
+    color: #8ef5b1;
+    cursor: pointer;
+}
+
+/* ================= FORMULARIO ================= */
+
+.footer-col form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-col input,
+.footer-col textarea{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+}
+
+.footer-col input:focus,
+.footer-col textarea:focus{
+    box-shadow: 0 0 8px #8ef5b1;
+}
+
+.footer-col textarea{
+    resize: none;
+    height: 70px;
+}
+
+/* BOTÓN */
+.footer-col button{
+    padding: 10px;
+    border: 2px solid #8ef5b1;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.footer-col button:hover{
+    background: #8ef5b1;
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* ================= COPYRIGHT ================= */
+
+.copyright{
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    font-size: 13px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    color: #cccccc;
+}
